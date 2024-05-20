@@ -13,14 +13,14 @@ echo "CREATE DATABASE ${DB_DATABASE}
 
 echo "\c ${DB_DATABASE};" >> /tmp/init_db.sql
 
-echo "CREATE TABLE users (
+echo "CREATE TABLE emails (
     id SERIAL PRIMARY KEY,
-    email VARCHAR(255) NOT NULL
+    Email VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE phone_numbers (
+CREATE TABLE phone_num (
     id SERIAL PRIMARY KEY,
-    phone_number VARCHAR(20) NOT NULL
+    Phone_num VARCHAR(20) NOT NULL
 );" >> /tmp/init_db.sql
 
 echo "CREATE ROLE ${DB_REPL_USER} REPLICATION LOGIN PASSWORD '${DB_REPL_PASSWORD}';" >> /tmp/init_db.sql
