@@ -17,7 +17,7 @@
 
 - name: Clone the bot repository
   git:
-    repo: 'https://github.com/katet3/pt-start-DevOps-bot-number'
+    repo: 'https://github.com/NataliaBilash/pt_start_devops.git'
     dest: '/opt/tg-bot'
     force: yes
 
