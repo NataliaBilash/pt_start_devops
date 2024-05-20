@@ -23,7 +23,7 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
 
   db_image:
-    build: ./db_image
+    build: ./db
     restart: always
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${DB_USER}"]
@@ -45,7 +45,7 @@ services:
         ipv4_address: 172.25.0.2
 
   db_repl_image:
-    build: ./db_repl_image
+    build: ./db_repl
     restart: always
     depends_on:
       - db_image
