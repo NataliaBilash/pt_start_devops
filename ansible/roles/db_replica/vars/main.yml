@@ -1,0 +1,4 @@
+pgdata: "/var/lib/postgresql/15/main"
+db_repl_user: "repl_user"
+db_repl_password: "123"
+db_host: "192.168.140.135"
